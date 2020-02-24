@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CityBeautiful</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>CityBeautiful</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+  
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "links") {
+          x.className += " responsive";
+        } else {
+          x.className = "links";
+        }
+      }
+      </script>
+
+    <%#Navbar %>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <%= link_to 'City Beautiful', root_url, class: 'navbar-brand' %>    
+
+          
+
+          <ul class="navlinks" id="myTopnav">
+
+          <li class="links">
+            <%= link_to "Events", "/events" %>
+          </li>
+          <li class="links"><a href="#">Dining</a></li>
+          <li class="links"><a href="#">Day Trips</a></li>
+          <li class="links"><a href="#">Local Favorites</a></li>
+          <li class="links"><a href="#">Contact</a></li>   
+          </ul>
+
+        </nav>
+      </header>
+
+    <%#Footer%>
+      <%#<footer class="footer">
+        <div class="container">
+          <span class="text-muted">
+          footer
+          </span>
+        </div>
+      </footer>%>
+          <%= yield %>
+    </div>
+  </div> 
+</body>
 </html>
+
+
