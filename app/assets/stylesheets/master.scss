@@ -13,7 +13,6 @@
 body, html {
   position: relative;
   height: 100%;
-  /*background-color: black;*/
   margin: 0;
   padding: 0;
   font-family : 'Roboto Condensed', sans-serif;
@@ -31,11 +30,12 @@ body, html {
 .navbar-custom {
   background-color: black;
   overflow: hidden;
+  box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
 }
 
 .navbar-brand {
   font-family: 'Lobster', cursive;
-  font-size: 36px;
+  font-size: 45px;
   color:#0B9F9F ;
 }
 
@@ -47,7 +47,8 @@ body, html {
 	display: inline-block;
 	float: left;
   padding: 10px;
-  text-align: center;   
+  text-align: center;
+  font-size: 20px;   
 }
 
 .links a {
@@ -78,6 +79,7 @@ body, html {
   background-size: cover;
   box-shadow: 0px 25px 20px rgba(2, 66, 66, 0.7);  
 }
+
 
 .footer {
   position: absolute;
@@ -112,29 +114,30 @@ section .leftBox {
   width: 50%;
   height: 100%;
   float: left;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   box-sizing: border-box;
 }
 
-section .leftBox .content {
+section .leftBox .contentevent {
   color: #fff;
   background: rgba(35, 131, 134, 0.5);
   padding: 40px;
   transition: .5s;
 }
 
-section .leftBox .content:hover {
+section .leftBox .contentevent:hover {
   background: #e91e63;
 }
 
-section .leftBox .content h1 {
+section .leftBox .contentevent h1 {
   margin: 0;
   padding: 0;
-  font-size: 50px;
-  text-transform: uppercase;
+  font-size: 50px;  
+  font-family : 'Lobster', cursive;
 }
 
-section .leftBox .content p {
+section .leftBox .contentevent p {
   margin: 10px 0 0;
   padding: 0;
 }
@@ -244,7 +247,7 @@ section .events ul li .details a:hover {
 
 .display-4 {
   color: white;
-  font-family : 'Roboto Condensed', sans-serif;
+  font-family : 'Lobster', cursive;
   text-align: center;
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -295,4 +298,47 @@ section .events ul li .details a:hover {
 .wood {
   background-image: url(wood.jpg);
   background-size: cover;
+}
+
+.parallax-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: white;
+  font-size: 24px;
+  padding: 0px;
+}
+
+.parallax {
+  background: url('orlandomural.jpg') no-repeat center;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 500px;  
+  box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
+}
+
+.parallax2 {
+  background: url('swan1.jpg') no-repeat center;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 500px;  
+  box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
+}
+
+.parallax3 {
+  background: url('fireworks.jpg') no-repeat center;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 500px;  
+  box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
+}
+
+.text {
+  text-align: center;
+  font-family : 'Roboto', sans-serif;
+  font-size: 30px;
+  color:#0B9F9F ;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
