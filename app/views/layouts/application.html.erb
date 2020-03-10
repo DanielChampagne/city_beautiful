@@ -32,9 +32,7 @@
     <%#Navbar %>
       <header>
         <nav class="navbar navbar-expand-lg navbar-custom">
-          <%= link_to 'City Beautiful', root_url, class: 'navbar-brand' %>    
-
-          
+          <%= link_to 'City Beautiful', root_url, class: 'navbar-brand' %>             
 
           <ul class="navlinks" id="myTopnav">
 
@@ -47,21 +45,17 @@
           <li class="links">
           <%= link_to "Day Trips", "/day_trips" %>
           </li>
-          <li class="links"><a href="#">Local Favorites</a></li>
-          <li class="links"><a href="#">Contact</a></li>   
+          <li class="links">
+          <%= link_to "Local Favorites", "/local_favorites" %>
+          </li>
+          <li class="links">
+          <%= link_to "Contact", "/contact" %>
+          </li> 
           </ul>
-
         </nav>
-      </header>
-
-    <%#Footer%>
-      <%#<footer class="footer">
-        <div class="container">
-          <span class="text-muted">
-          footer
-          </span>
-        </div>
-      </footer>%>
+      </header>      
+  </body>
+</html>
           <%= yield %>
     </div>
   </div> 

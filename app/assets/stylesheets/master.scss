@@ -35,7 +35,7 @@ body, html {
 
 .navbar-brand {
   font-family: 'Lobster', cursive;
-  font-size: 45px;
+  font-size: 60px;
   color:#0B9F9F ;
 }
 
@@ -117,6 +117,7 @@ section .leftBox {
   padding-left: 50px;
   padding-right: 50px;
   box-sizing: border-box;
+  margin-top: 50px;  
 }
 
 section .leftBox .contentevent {
@@ -140,6 +141,7 @@ section .leftBox .contentevent h1 {
 section .leftBox .contentevent p {
   margin: 10px 0 0;
   padding: 0;
+  font-size: 25px;
 }
 
 section .events {
@@ -258,6 +260,18 @@ section .events ul li .details a:hover {
   padding: 10px; 
 }
 
+.dining-box {
+  color: white;
+  font-family : 'Lobster', cursive;
+  text-align: center; 
+  background: rgba(35, 131, 134, 0.856);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(35, 131, 134, 0.856);
+  padding: 10px; 
+  margin-top: 15px;
+  font-size: 50px;
+}
+
 .lead {
   color: white;
 }
@@ -291,12 +305,35 @@ section .events ul li .details a:hover {
   text-align: center;
 }
 
+
+
+
+
+.inside-booyah-box {
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: rgba(255, 255, 255, 0.541);  
+  border: 1px solid #ccc;
+  /* border-color: #e4e4e4 #bebebd #bebebd #e4e4e4; */
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 5px;
+  text-align: center;
+}
+
 .orlando {
   background-color: black;
 }
 
-.wood {
-  background-image: url(wood.jpg);
+// .wood {
+//   background-image: url(wood.jpg);
+//   background-size: cover;
+// }
+
+.window {
+  background: url(window.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -312,7 +349,7 @@ section .events ul li .details a:hover {
   background: url('orlandomural.jpg') no-repeat center;
   background-size: 100%;
   background-attachment: fixed;
-  height: 500px;  
+  height: 550px;  
   box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
 }
 
@@ -328,7 +365,7 @@ section .events ul li .details a:hover {
   background: url('fireworks.jpg') no-repeat center;
   background-size: 100%;
   background-attachment: fixed;
-  height: 500px;  
+  height: 650px;  
   box-shadow: 0px 15px 30px rgba(2, 66, 66, 0.7);
 }
 
@@ -341,4 +378,69 @@ section .events ul li .details a:hover {
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.kennedy {
+  background-image: url(nasa.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+
+.cocoa {
+  background-image: url(cocoa.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+
+.augustine {
+  background-image: url(augustine.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+
+.riverwalk {
+  background-image: url(riverwalk.jpg);
+  background-size: cover;
+  background-position: center;  
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  section {
+    height: 100%;
+    background-position: center;
+  }
+  section .leftBox {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  section .leftBox .contentevent p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  section .events {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    float: none;    
+  }
+  section .leftBox .content h1 {
+    font-size: 30px;    
+  }
+  section .events ul {
+    position: relative;
+    transform: translateY(0px);
+    padding: 0px 20px 20px;
+  }
+  section .events ul li .details a {
+    margin-top: 5px;
+    padding: 5px;
+  }
 }
